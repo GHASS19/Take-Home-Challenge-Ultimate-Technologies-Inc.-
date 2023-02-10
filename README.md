@@ -4,9 +4,11 @@ Part 1. Exploratory Data Analysis
 
 Combining weekdays and hours, we can see that most users log in most of the late nights and dawns on Sundays and Saturdays.
 ![image](https://user-images.githubusercontent.com/86930309/218025657-763cdbca-d974-47bb-b7f0-d7c734481d99.png)
+
 It looks as if there is high usage on the weekends or later in the week. At the start of the week there is not as much action.
 
 ![image](https://user-images.githubusercontent.com/86930309/218025974-3fd99884-02bc-4a5d-a208-3d5caef53312.png)
+
 Here we can see that logins increase as the week goes on. There is a small drop off on Sundays.
 
 
