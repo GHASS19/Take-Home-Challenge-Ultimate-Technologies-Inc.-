@@ -13,9 +13,6 @@ This graph shows us that usage is highest in 22nd hour/10pm. The logins are high
 
 Here we can see that logins increase as the week goes on. There is a small drop off on Sundays.
 
-
-
-
 Part 2. Experiment and Metrics Design
 
 The neighboring cities of Gotham and Metropolis have complementary circadian rhythms: on weekdays, Ultimate Gotham is most active at night, and Ultimate Metropolis is most active during the day. On weekends, there is reasonable activity in both cities.
