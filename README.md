@@ -2,10 +2,9 @@
 
 Part 1. Exploratory Data Analysis
 
-Combining weekdays and hours, we can see that most users log in most of the late nights and dawns on Sundays and Saturdays.
-![image](https://user-images.githubusercontent.com/86930309/218025657-763cdbca-d974-47bb-b7f0-d7c734481d99.png)
+![image](https://user-images.githubusercontent.com/86930309/218026384-08458b14-e8b1-4576-83c6-833a6ea3225b.png)
 
-It looks as if there is high usage on the weekends or later in the week. At the start of the week there is not as much action.
+This graph shows us that usage is highest in 22nd hour/10pm. The logins are high in the early morning from the 0-4 hour/12-4am. Then declines in the morning from 5-8am. It increase gradually from 9-11am then declines from 11am-5pm. It starts to rise from 5pm to 10pm. Peak hours are late at night and very early in the morning as well as midday.
 
 ![image](https://user-images.githubusercontent.com/86930309/218025974-3fd99884-02bc-4a5d-a208-3d5caef53312.png)
 
