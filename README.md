@@ -13,6 +13,7 @@ This graph shows us that usage is highest in 22nd hour/10pm. The logins are high
 
 Here we can see that logins increase as the week goes on. There is a small drop off on Sundays.
 
+
 Part 2. Experiment and Metrics Design
 
 The neighboring cities of Gotham and Metropolis have complementary circadian rhythms: on weekdays, Ultimate Gotham is most active at night, and Ultimate Metropolis is most active during the day. On weekends, there is reasonable activity in both cities.
@@ -39,5 +40,6 @@ b. what statistical test(s) you will conduct to verify the significance of the o
 c. how you would interpret the results and provide recommendations to the city operations team along with any caveats.
 
 ==> If the increased revenue is positive, then it is effective to encourage driver partners by reimbursing toll costs. If the increased revenue is negative, they should not adopt the toll cost reimbursement. Even it is revealed the increased revenue is positive, the drivers have randomly chosen, and it may not be effective in all cases. We need more rigorous experiments by different variables (e.g., selecting other drivers, differnt portions, different days, etc.)
+
 
 Part 3. Predictive Modeling
