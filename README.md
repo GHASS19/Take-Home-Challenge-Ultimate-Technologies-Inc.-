@@ -1,4 +1,4 @@
-# Take-Home-Challenge-Ultimate-Technologies-Inc.
+## Take-Home-Challenge-Ultimate-Technologies-Inc.
 
 Part 1. Exploratory Data Analysis
 
