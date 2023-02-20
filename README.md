@@ -85,9 +85,12 @@ Random Forest Model is the classifier I suggest Ultimate use going forward. Thei
 
 ![image](https://user-images.githubusercontent.com/86930309/220006859-be83e19d-ecdd-41c9-bebc-a6048be2e922.png)
    
+             
               precision    recall  f1-score   support
+
            0       0.81      0.84      0.82      9379
            1       0.71      0.66      0.69      5621
+
     accuracy                           0.77     15000
    macro avg       0.76      0.75      0.75     15000
 weighted avg       0.77      0.77      0.77     15000
