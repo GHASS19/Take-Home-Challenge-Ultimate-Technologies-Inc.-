@@ -19,7 +19,7 @@ The neighboring cities of Gotham and Metropolis have complementary circadian rhy
 
 However, a toll bridge, with a two way toll, between the two cities causes driver partners to tend to be exclusive to each city. The Ultimate managers of city operations for the two cities have proposed an experiment to encourage driver partners to be available in both cities, by reimbursing all toll costs.
 
-What would you choose as the key measure of success of this experiment in encouraging driver partners to serve both cities, and why would you choose this metric?
+**A. What would you choose as the key measure of success of this experiment in encouraging driver partners to serve both cities, and why would you choose this metric?**
 
 The key measurement of success would be to see if it is beneficial to customers and drivers to serve both cities. I would measure three variables to see if the experiment is worth it:
 
@@ -29,21 +29,26 @@ The key measurement of success would be to see if it is beneficial to customers 
 
 These three variables are the most valuable aspects of the experiment. The most important element to customers is convenience of obtaining a ride and the city wants happy customers and less congestion on their roads. The drivers are potentially interested in making more money by spending time in a different city. The city wants to know if it is worth it to pay the tolls by sending drivers across the bridge.
 
-In the aspects of the servicing both cities, we can measure the following metrics that can be regarded to as successful indicators.
+**B. Describe a practical experiment you would design to compare the effectiveness of the proposed change in relation to the key measure of success. Please provide details on how you will implement the experiment**
 
-increased number of available drivers: average number of available drivers when calling for the pickup,
-decreased wait time: average wait time when calling for the pickup, and
-increased number of trips: number of trips across the bridges.
-Describe a practical experiment you would design to compare the effectiveness of the proposed change in relation to the key measure of success. Please provide details on:
-a. how you will implement the experiment
-==> To investigate the effectiveness of the proposed change, I would compare two groups of drivers with/without reimbursements and measure the key measures mentioned above. I would recommend dividing the drivers at random by 50% and 50% for each group, one for the drivers offered reimbursement and the other for remaining drivers continuing to operate without being reimbursed for tolls.
+We would implement this by conducting an A/B test. We would collect data from drivers, tolls, and customers from before and after the experiment and compare them. We would compare average wait times before and after the change. Also to compare profits as well before and after the experiment. Lastly, we could look at the data on the tolls each city paid for the drivers and compare it to reduced traffic during peak hours and customer ratings before and after.
 
-b. what statistical test(s) you will conduct to verify the significance of the observation
+**C. What statistical test(s) you will conduct to verify the significance of the observation:**
 
-==> To verify the significance of the observation, I perform the A/B test on those two groups. I perform the t-test with a confidence level of 95%, where the null hypothesis is the reimbursing drivers for tolls does not have a statistically significant impact on Ultimate's net profits.
+We would do a null hypothesis test on the three variables to verify the significance of the observation. Our null hypothesis would be that nothing has changed by paying for the drivers tolls by serving both cities. This would indicate that each individual variable all had the same mean before and after the experiment. For example the mean of profits for all drivers is the same before and after. We could do a trail of 12 months for seasonal adjustments. Here we could compare the data for every month before and after. Now we would test our null hypothesis on each variable.
 
-c. how you would interpret the results and provide recommendations to the city operations team along with any caveats.
+- For wait times: The p-value would be that a customer waited 60 seconds less not in the experiment. This is the probability that a customer waited less before the experiment. If this happened less than 5% of the time then we can reject the null hypothesis and it is highly unlikely to happen. Then the experiment of paying for tolls and having drivers go to opposite cities is worth paying for the tolls. This is statistically significant.
 
-==> If the increased revenue is positive, then it is effective to encourage driver partners by reimbursing toll costs. If the increased revenue is negative, they should not adopt the toll cost reimbursement. Even it is revealed the increased revenue is positive, the drivers have randomly chosen, and it may not be effective in all cases. We need more rigorous experiments by different variables (e.g., selecting other drivers, differnt portions, different days, etc.)
+- Profits: The p-value would be that the drivers made 20% more not in the experiment. This is the probability that a driver made more money before the experiment. If this happened less than 5% of the time then we can reject the null hypothesis and it is highly unlikely to happen. Then the experiment is a success and is statistically significant.
 
-Part 3. Predictive Modeling
+- Toll Payment: The p-value would be that the city had higher customer ratings and less traffic not in the experiment. This is the probability that customers were happier and had less wait times in traffic before the experiment. If this happened less than 5% of the time then we can reject the null hypothesis and it is highly unlikely to happen. Then the experiment is a success and is statistically significant.
+- 
+**D. how you would interpret the results and provide recommendations to the city operations team along with any caveats.**
+
+If we reject each of these null hypothesis then we know that the city should continue the program. If the numbers from the data do not express an improvement they should go back to the drivers staying in their individual cities. The caveats are the quality and length of the experiment. Issues like will the drivers actually go to the opposite cities and increased traffic at certain times are a few of the issues that might come from the experiment. The city would need to work out these different issues by implementing the project as they arise.
+
+# Part 3. Predictive Modeling
+
+Ultimate is interested in predicting rider retention. To help explore this question, we have provided a sample dataset of a cohort of users who signed up for an Ultimate account in January 2014. The data was pulled several months later; we consider a user retained if they were “active” (i.e. took a trip) in the preceding 30 days.
+
+We would like you to use this data set to help understand what factors are the best predictors for retention, and offer suggestions to operationalize those insights to help Ultimate. The data is in the attached file ultimate_data_challenge.json. See below for a detailed description of the dataset. Please include any code you wrote for the analysis and delete the dataset when you have finished with the challenge.
