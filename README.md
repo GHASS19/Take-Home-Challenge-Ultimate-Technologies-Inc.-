@@ -52,3 +52,45 @@ If we reject each of these null hypothesis then we know that the city should con
 Ultimate is interested in predicting rider retention. To help explore this question, we have provided a sample dataset of a cohort of users who signed up for an Ultimate account in January 2014. The data was pulled several months later; we consider a user retained if they were “active” (i.e. took a trip) in the preceding 30 days.
 
 We would like you to use this data set to help understand what factors are the best predictors for retention, and offer suggestions to operationalize those insights to help Ultimate. The data is in the attached file ultimate_data_challenge.json. See below for a detailed description of the dataset. Please include any code you wrote for the analysis and delete the dataset when you have finished with the challenge.
+
+**Question 1: Perform any cleaning, exploratory analysis, and/or visualizations to use the provided data for this analysis (a few sentences/plots describing your approach will suffice). What fraction of the observed users were retained?**
+
+69.219% Users where retained in the last 30 days.
+
+Now we need to create our Y variable that we will predict, which is whether or not a user will be active in their 6th month on the system. It will be any rider who got a ride in the month of June.
+df['retained'] = (df.last_trip_date > '2014-05-31')*1
+
+![image](https://user-images.githubusercontent.com/86930309/220006506-3f2418e7-be90-4729-936f-ec96a16d4502.png)
+
+retained                  1.000000
+trips_in_first_30_days    0.210463
+ultimate_black_user       0.205002
+surge_pct                 0.011797
+weekday_pct               0.009693
+avg_surge                -0.003333
+avg_rating_by_driver     -0.027548
+avg_rating_of_driver     -0.041082
+avg_dist                 -0.092780
+Name: retained, dtype: float64
+
+Trips in the first 30 days and ultimate black user have the highest correlation with our Y variable. So perhaps a ultimate black user is more inclined to be a repeat customer. Lets look at a table of retained and ultimate black users.
+
+
+**Question 2: Build a predictive model to help Ultimate determine whether or not a user will be active in their 6th month on the system. Discuss why you chose your approach, what alternatives you considered, and any concerns you have. How valid is your model? Include any key indicators of model performance.**
+
+Random Forest Model is the classifier I suggest Ultimate use going forward. Their precision, recall, auc and cross validation scores were all higher than logistic regression. RF is predicting who is a retained rider or not and has less false positives, and true negatives. I would also look into multiple other models just to see if they could predict if a rider was retained or not better.
+
+![image](https://user-images.githubusercontent.com/86930309/220006859-be83e19d-ecdd-41c9-bebc-a6048be2e922.png)
+   
+              precision    recall  f1-score   support
+
+           0       0.81      0.84      0.82      9379
+           1       0.71      0.66      0.69      5621
+
+    accuracy                           0.77     15000
+   macro avg       0.76      0.75      0.75     15000
+weighted avg       0.77      0.77      0.77     15000
+
+**Question 3. Briefly discuss how Ultimate might leverage the insights gained from the model to improve its long term rider retention (again, a few sentences will suffice).**
+
+Ultimate could improve rider retention by target marketing to ultimate black users as nearly half of them were not retained. Not many riders in Astapor or Winterfell were retained from these cities. I would implement a campaign to retain these riders. When more data becomes available we could test our RF model again to ensure its accuracy. This would also help Ultimate to predict future sales earnings and customer volume in future quarters for long term rider retention.
