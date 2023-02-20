@@ -20,8 +20,14 @@ The neighboring cities of Gotham and Metropolis have complementary circadian rhy
 However, a toll bridge, with a two way toll, between the two cities causes driver partners to tend to be exclusive to each city. The Ultimate managers of city operations for the two cities have proposed an experiment to encourage driver partners to be available in both cities, by reimbursing all toll costs.
 
 What would you choose as the key measure of success of this experiment in encouraging driver partners to serve both cities, and why would you choose this metric?
-==> I want to investigate if the "encouraging driver partners (by reimbursing all toll costs)" is effective in servicing both cities.
-The most important key measure of success will be the revenue increase for the Ultimate Inc. The higher the increased revenue, the experiment "encouraging driver partners to serve in both cities" can be considered to be more successful. Please note that the metrics are measured on before and after encouraging driver partners then the difference as the success indicator is obtained. - increased revenue: revenue (costs of toll reimbursement should be deducted)
+
+The key measurement of success would be to see if it is beneficial to customers and drivers to serve both cities. I would measure three variables to see if the experiment is worth it:
+
+- If it reduces wait times for customer
+- Increases profit for the drivers
+- Is it worth it for the city to reimburse the drivers for the toll
+
+These three variables are the most valuable aspects of the experiment. The most important element to customers is convenience of obtaining a ride and the city wants happy customers and less congestion on their roads. The drivers are potentially interested in making more money by spending time in a different city. The city wants to know if it is worth it to pay the tolls by sending drivers across the bridge.
 
 In the aspects of the servicing both cities, we can measure the following metrics that can be regarded to as successful indicators.
 
