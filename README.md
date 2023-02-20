@@ -84,18 +84,8 @@ Trips in the first 30 days and ultimate black user have the highest correlation 
 Random Forest Model is the classifier I suggest Ultimate use going forward. Their precision, recall, auc and cross validation scores were all higher than logistic regression. RF is predicting who is a retained rider or not and has less false positives, and true negatives. I would also look into multiple other models just to see if they could predict if a rider was retained or not better.
 
 ![image](https://user-images.githubusercontent.com/86930309/220006859-be83e19d-ecdd-41c9-bebc-a6048be2e922.png)
-   
-             
-[[7880 1499]
- [1907 3714]]
-              precision    recall  f1-score   support
-
-           0       0.81      0.84      0.82      9379
-           1       0.71      0.66      0.69      5621
-
-    accuracy                           0.77     15000
-   macro avg       0.76      0.75      0.75     15000
-weighted avg       0.77      0.77      0.77     15000
+                
+The area under the curve for Random Forest is higher than Logistic Regression at .8365. When we do a cross validation the average of the five is .84. The RF model is doing a good job of deciding if the rider is retained or not.
 
 **Question 3. Briefly discuss how Ultimate might leverage the insights gained from the model to improve its long term rider retention (again, a few sentences will suffice).**
 
