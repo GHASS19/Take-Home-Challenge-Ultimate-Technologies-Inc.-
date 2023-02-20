@@ -57,7 +57,10 @@ We would like you to use this data set to help understand what factors are the b
 
 69.219% Users where retained in the last 30 days.
 
+![image](https://user-images.githubusercontent.com/86930309/220007165-5ff7351f-022e-478b-8b72-84fbdb626461.png)
+
 Now we need to create our Y variable that we will predict, which is whether or not a user will be active in their 6th month on the system. It will be any rider who got a ride in the month of June.
+
 df['retained'] = (df.last_trip_date > '2014-05-31')*1
 
 ![image](https://user-images.githubusercontent.com/86930309/220006506-3f2418e7-be90-4729-936f-ec96a16d4502.png)
@@ -83,10 +86,8 @@ Random Forest Model is the classifier I suggest Ultimate use going forward. Thei
 ![image](https://user-images.githubusercontent.com/86930309/220006859-be83e19d-ecdd-41c9-bebc-a6048be2e922.png)
    
               precision    recall  f1-score   support
-
            0       0.81      0.84      0.82      9379
            1       0.71      0.66      0.69      5621
-
     accuracy                           0.77     15000
    macro avg       0.76      0.75      0.75     15000
 weighted avg       0.77      0.77      0.77     15000
