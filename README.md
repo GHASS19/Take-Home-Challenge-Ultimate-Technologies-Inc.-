@@ -92,7 +92,9 @@ Random Forest Model is the classifier I suggest Ultimate use going forward. Thei
            1       0.71      0.66      0.69      5621
 
     accuracy                           0.77     15000
+    
    macro avg       0.76      0.75      0.75     15000
+   
 weighted avg       0.77      0.77      0.77     15000
 
 **Question 3. Briefly discuss how Ultimate might leverage the insights gained from the model to improve its long term rider retention (again, a few sentences will suffice).**
